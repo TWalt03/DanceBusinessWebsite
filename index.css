@@ -43,29 +43,42 @@ i {
   top: 0;
 }
 
-.Steven{
-    display: flex;
-    justify-content: center;
+#stte {
+  text-align: center;
 }
 
-#stte{
-    text-align: center;
+.Steven,
+.Sophia {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
 }
 
-#testi{
-    padding: 50px;
-    width: 300px;
+.imgcont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  max-width: 300px;
 }
-.stevenpic{
-    height: 400px;
-    width: 300px;
-    padding-left: 50px;
+figcaption {
+  text-align: center;
+  margin-top: 10px;
 }
-#Sdes{
-    text-align: center;
-    width: 300px;
-    padding-left: 50px;
+#test {
+  padding: 60px;
+  width: 600px;
+  flex: 1;
+  max-width: 600px;
 }
+.stevenpic, .sophiapic{
+  height: 400px;
+  width: 300px;
+  padding-left: 0px;
+  object-fit: cover;
+}
+
 .sidebar {
   position: fixed;
   height: 100vh;
@@ -86,12 +99,12 @@ i {
 }
 
 .sidebar.active h1 {
-  padding: 20px;
+  padding-left: 50px;
 }
 
 .sidebar.active a {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   text-align: center;
   text-decoration: none;
   color: black;
@@ -120,32 +133,31 @@ i {
 }
 
 footer {
-    position: fixed;
-    width: 100%;
-    padding: 1em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-    bottom: 0;
-  }
-  
-  .embtn {
-    bottom: 0;
-    width: 100px;
-    font-size: 24px;
-    background-color: cyan;
-    border-radius: 20%;
-    border-color: transparent;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  
-  .embtn a {
-    color: black;
-    text-decoration: none;
-  }
-  
-  .embtn:hover {
-    text-decoration: underline;
-  }
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  bottom: 0;
+}
+
+.embtn {
+  bottom: 0;
+  width: 100px;
+  font-size: 24px;
+  background-color: cyan;
+  border-radius: 20%;
+  border-color: transparent;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.embtn a {
+  color: black;
+  text-decoration: none;
+}
+
+.embtn:hover {
+  text-decoration: underline;
+}
