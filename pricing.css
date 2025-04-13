@@ -1,52 +1,65 @@
-.menubtn{
-    width: 3%;
-    font-size: 30px;
-    background-color: transparent;
-    border-color: transparent;
-}
-i{
-    color: black;
+html {
+  background-color: lightblue;
 }
 
-h1, h2, h3{
-    display: flex;
-    justify-content: center;
-    text-decoration: underline;
+.menubtn {
+  width: 3%;
+  font-size: 30px;
+  background-color: transparent;
+  border-color: transparent;
 }
-p{
-    text-align: center;
-    padding-left: 10%;
-    padding-right: 10%;
+
+i {
+  color: black;
 }
-.sidebar{
-    position: fixed;
-    height: 100vh;
-    top: 0;
-    left: -300px;
-    width: 300px;
-    background: white;
-    border-color: black;
-    transition: 0.3s ease-in-out;
-    z-index: 3;
+
+h1,
+h2,
+h3 {
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
 }
-.sidebar.active{
-    left: 0;
-    background-color: white;
-    border-color: black;
+
+p {
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
 }
-.sidebar.active h1{
-    padding: 20px;
+
+.sidebar {
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  background: white;
+  border-color: black;
+  transition: 0.5s ease-in-out;
+  z-index: 3;
 }
-.sidebar.active a{
-    display:flex;
-    flex-direction: row;
-    text-align: center;
-    text-decoration: none;
-    color: black;
-    font-size: 24px;
-    padding: 20px;
+
+.sidebar.active {
+  left: 0;
+  background-color: white;
+  border-color: black;
 }
-.sidebar.active a:hover{
-    text-decoration: underline;
-    font-weight: bold;
+
+.sidebar.active h1 {
+  padding: 20px;
+}
+
+.sidebar.active a {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  padding: 20px;
+}
+
+.sidebar.active a:hover {
+  text-decoration: underline;
+  font-weight: bold;
 }

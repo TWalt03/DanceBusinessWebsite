@@ -1,35 +1,136 @@
-header{
-    font-size: 20px;
+html {
+  background-color: lightblue;
+}
+header {
+  font-size: 20px;
 }
 
-p{
-    font-size: 16px;
+p {
+  font-size: 16px;
 }
-nav{
+
+nav {
+  display: flex;
+  justify-content: left;
+}
+
+.menubtn {
+  width: 3%;
+  font-size: 30px;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+i {
+  color: black;
+}
+
+.himg {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  object-fit: cover;
+}
+
+.title {
+  position: absolute;
+  text-align: center;
+  left: 10%;
+  transform: translateY(20%);
+  font-size: 40px;
+  color: rgb(46, 154, 190);
+  text-decoration: underline;
+  top: 0;
+}
+
+.Steven{
     display: flex;
-    justify-content: left;
+    justify-content: center;
 }
 
-.menubtn{
-    width: 3%;
-    font-size: 30px;
-    background-color: transparent;
-    border-color: transparent;
+#stte{
+    text-align: center;
 }
-i{
-    color: black;
+
+#testi{
+    padding: 50px;
+    width: 300px;
 }
-footer{
+.stevenpic{
+    height: 400px;
+    width: 300px;
+    padding-left: 50px;
+}
+#Sdes{
+    text-align: center;
+    width: 300px;
+    padding-left: 50px;
+}
+.sidebar {
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: -300px;
+  width: 290px;
+  padding: 0;
+  background: white;
+  border-color: black;
+  transition: 0.5s ease-in-out;
+  z-index: 1000;
+}
+
+.sidebar.active {
+  left: 0;
+  background-color: white;
+  border-color: black;
+}
+
+.sidebar.active h1 {
+  padding: 20px;
+}
+
+.sidebar.active a {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  padding: 20px;
+}
+
+.sidebar.active a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+}
+
+.overlay.active {
+  display: block;
+}
+
+footer {
     position: fixed;
     width: 100%;
-    padding: 2em;
+    padding: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 2;
     bottom: 0;
-}
-.embtn{
+  }
+  
+  .embtn {
     bottom: 0;
     width: 100px;
     font-size: 24px;
@@ -38,44 +139,13 @@ footer{
     border-color: transparent;
     padding-left: 0;
     padding-right: 0;
-}
-.embtn a{
+  }
+  
+  .embtn a {
     color: black;
     text-decoration: none;
-}
-
-.embtn:hover{
+  }
+  
+  .embtn:hover {
     text-decoration: underline;
-}
-.sidebar{
-    position: fixed;
-    height: 100vh;
-    top: 0;
-    left: -300px;
-    width: 300px;
-    background: white;
-    border-color: black;
-    transition: 0.3s ease-in-out;
-    z-index: 3;
-}
-.sidebar.active{
-    left: 0;
-    background-color: white;
-    border-color: black;
-}
-.sidebar.active h1{
-    padding: 20px;
-}
-.sidebar.active a{
-    display:flex;
-    flex-direction: row;
-    text-align: center;
-    text-decoration: none;
-    color: black;
-    font-size: 24px;
-    padding: 20px;
-}
-.sidebar.active a:hover{
-    text-decoration: underline;
-    font-weight: bold;
-}
+  }
