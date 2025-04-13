@@ -9,8 +9,15 @@ nav{
     display: flex;
     justify-content: left;
 }
-#navbar{
-    font-size: 20px;
+
+.menubtn{
+    width: 3%;
+    font-size: 30px;
+    background-color: transparent;
+    border-color: transparent;
+}
+i{
+    color: black;
 }
 footer{
     position: fixed;
@@ -39,4 +46,36 @@ footer{
 
 .embtn:hover{
     text-decoration: underline;
+}
+.sidebar{
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    background: white;
+    border-color: black;
+    transition: 0.3s ease-in-out;
+    z-index: 3;
+}
+.sidebar.active{
+    left: 0;
+    background-color: white;
+    border-color: black;
+}
+.sidebar.active h1{
+    padding: 20px;
+}
+.sidebar.active a{
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    padding: 20px;
+}
+.sidebar.active a:hover{
+    text-decoration: underline;
+    font-weight: bold;
 }

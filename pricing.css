@@ -1,4 +1,4 @@
-.backbtn{
+.menubtn{
     width: 3%;
     font-size: 30px;
     background-color: transparent;
@@ -34,7 +34,19 @@ p{
     background-color: white;
     border-color: black;
 }
+.sidebar.active h1{
+    padding: 20px;
+}
 .sidebar.active a{
     display:flex;
     flex-direction: row;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    padding: 20px;
+}
+.sidebar.active a:hover{
+    text-decoration: underline;
+    font-weight: bold;
 }
