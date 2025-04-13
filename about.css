@@ -1,0 +1,17 @@
+h1, h2{
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+#psa, #notice{
+    font-weight: bold;
+}
+.backbtn{
+    width: 3%;
+    font-size: 30px;
+    background-color: transparent;
+    border-color: transparent;
+}
+i{
+    color: black;
+}
